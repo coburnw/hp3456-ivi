@@ -70,3 +70,8 @@ if __name__ == '__main__':
     instr.auto_range = 'on'
     dump()
 
+    instr.measurement_function = 'dc_volts'
+    instr.range = 10
+    instr.resolution = 0.001
+    dump()
+
