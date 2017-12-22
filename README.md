@@ -11,7 +11,7 @@ A simple but functional driver for interacting with the HP 3456A series voltmete
   * untested with the other python-ivi gpib interface drivers
 
 ### Installation
-Since the installation is very similar for each of my IVI drivers, see this [gist] (https://gist.github.com/coburnw/57634c7e821dd7f32e9a68e1d14c16a4) 
+Since the installation is very similar for each of my IVI drivers, see this [gist](https://gist.github.com/coburnw/57634c7e821dd7f32e9a68e1d14c16a4) 
 
 ### Notes
   * Developed for an HP3456A and an E2050A. Other devices and options untested.
