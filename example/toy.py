@@ -15,17 +15,17 @@ import time
 import ivi
 
 def dump():
-    print 'getting ' + instr.measurement_function
-    print ' autorange = ' + str(instr.auto_range)
-    print ' man_range = ' + str(instr.range)
-    print ' resolution = ' + str(instr.resolution)
+    print( 'getting ' + instr.measurement_function)
+    print( ' autorange = ' + str(instr.auto_range))
+    print( ' man_range = ' + str(instr.range))
+    print( ' resolution = ' + str(instr.resolution))
     val = instr.measurement.read(5)
-    print ' overrange = ' + str(instr.measurement.is_over_range(val))
-    print ' underrange = ' + str(instr.measurement.is_under_range(val))
+    print( ' overrange = ' + str(instr.measurement.is_over_range(val)))
+    print( ' underrange = ' + str(instr.measurement.is_under_range(val)))
     if instr.measurement.is_out_of_range(val):
-        print ' reading = ' + str(val) + ' (out of range)'
+        print( ' reading = ' + str(val) + ' (out of range)')
     else:
-        print ' reading = ' + str(val)
+        print( ' reading = ' + str(val))
     print
     
 
@@ -34,13 +34,13 @@ if __name__ == '__main__':
     #
     # use IVI and the HP3456A driver to interact with a vxi-11 connected instrument.
     #
-    instr = ivi.contrib.agilent3456A("TCPIP0::192.168.2.9::gpib0,22::INSTR")
+    instr = ivi.local.agilent3456A("TCPIP0::192.168.2.9::gpib0,22::INSTR")
     
     #instr.help()
 
-    print instr.identity.instrument_manufacturer,
-    print instr.identity.instrument_model
-    print
+    print( instr.identity.instrument_manufacturer),
+    print( instr.identity.instrument_model)
+    print()
 
     instr.measurement_function = 'dc_volts'
     instr.range = 10
