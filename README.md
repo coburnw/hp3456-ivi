@@ -3,7 +3,7 @@
 A simple but functional driver for interacting with the HP 3456A series Voltmeters
 
 ### Requirements
-  * developed using Python 2.7.9
+  * developed using Python 2.7.9, ported to 3.12.3
   
 ### Dependencies
   * python-ivi https://github.com/python-ivi/python-ivi
