@@ -1,3 +1,0 @@
-#add 'from .agilent3456A import agilent3456A' to contrib/__init__.py
-
-cp agilent3456A.py ../../python-ivi/ivi/contrib

@@ -13,6 +13,7 @@ import time
 # quit()
 
 import ivi
+from hp3456_ivi import agilent3456A
 
 def dump():
     print( 'getting ' + instr.measurement_function)
@@ -34,7 +35,7 @@ if __name__ == '__main__':
     #
     # use IVI and the HP3456A driver to interact with a vxi-11 connected instrument.
     #
-    instr = ivi.local.agilent3456A("TCPIP0::192.168.2.9::gpib0,22::INSTR")
+    instr = agilent3456A("TCPIP0::192.168.2.9::gpib0,22::INSTR")
     
     #instr.help()
 

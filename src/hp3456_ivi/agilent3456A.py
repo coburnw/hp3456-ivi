@@ -3,7 +3,7 @@
 Python Interchangeable Virtual Instrument Library
 
 agilent3456A.py
-Copyright (c) 2017 Coburn Wightman
+Copyright (c) 2024 Coburn Wightman
 
 Derived from agilent436A.py
 Copyright (c) 2012-2017 Alex Forencich
@@ -30,11 +30,10 @@ THE SOFTWARE.
 
 import math
 
-from .. import ivi
-from .. import dmm
+import ivi
+from ivi import dmm
 
 Auto = set(['off', 'on'])
-
 MeasurementFunctionMapping = {'dc_volts' : 'F1',
                               'ac_volts' : 'F2',
                               'ac_plus_dc_volts' : 'F3',
